@@ -11,3 +11,5 @@ sudo find ~/ -name "Singleton*" -exec rm {} \;
 
 
 echo "All Singleton files have been removed."
+
+bash /usr/bin/chromm
