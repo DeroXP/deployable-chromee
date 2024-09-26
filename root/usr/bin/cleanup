@@ -5,9 +5,6 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -
 apt-get install -y ./chrome.deb
 rm chrome.deb
 
-
-cd ~/.config/google-chrome/ || { echo "Chrome configuration directory not found!"; exit 1; }
-
 # Find and remove Singleton files in all profile directories
 
 sudo find ~/ -name "Singleton*" -exec rm {} \;
