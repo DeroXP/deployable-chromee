@@ -7,15 +7,13 @@ The architectures supported by this image are:
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
-| arm64 | ✅ | arm64v8-\<version tag\> |
-| armhf | ✅ | arm32v7-\<version tag\> |
-
+\
 ## Application Setup
 
 The application can be accessed at:
 
 * http://yourhost:3000/
-* https://yourhost:3001/
+\
 
 ### Options in all KasmVNC based GUI containers
 
@@ -59,7 +57,7 @@ version: "2.1"
 services:
   chrome:
     privileged: true
-    image: ghcr.io/saahirlol/chromeeee:main
+    image: ghcr.io/saahirlol/chrome:main
     container_name: chrome
     environment:
       - PUID=1000
@@ -89,7 +87,7 @@ docker run -d \
   -v /path/to/data:/data \
   --restart unless-stopped \
   --shm-size="2gb" \
-  ghcr.io/saahirlol/chromeeee:main
+  ghcr.io/saahirlol/chrome:main
 
 ```
 
