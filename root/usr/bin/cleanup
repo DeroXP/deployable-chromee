@@ -9,6 +9,8 @@ rm chrome.deb
 cd ~/.config/google-chrome/ || { echo "Chrome configuration directory not found!"; exit 1; }
 
 # Find and remove Singleton files in all profile directories
-find . -type f \( -name "SingletonLock" -o -name "SingletonCookie" -o -name "SingletonSocket" \) -exec rm -f {} +
+
+sudo find ~/ -name "Singleton*" -exec rm {} \;
+
 
 echo "All Singleton files have been removed."
