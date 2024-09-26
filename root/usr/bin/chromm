@@ -1,1 +1,1 @@
-bash /usr/bin/google-chrome --ignore-gpu-blocklist --password-store=basic --start-maximized 
+bash /usr/bin/google-chrome --ignore-gpu-blocklist --password-store=basic --start-maximized --user-data-dir --no-first-run --disable-search-engine-choice-screen
